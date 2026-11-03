@@ -13,6 +13,11 @@ resulting evolution skill can itself be improved through meta-evolution.
 **[PDF](https://arxiv.org/pdf/2610.09197)** |
 **[Code](https://github.com/amazon-science/FreeEvolve)**
 
+![FreeEvolve replaces a prescribed evolution loop with campaign autonomy, then uses meta-evolution to learn how to exercise that control.](assets/images/freeevolve-overview.png)
+
+*FreeEvolve gives campaign control to the evolver. Meta-evolution turns that
+autonomy into a learned, reusable evolution skill.*
+
 ## Quickstart
 
 FreeEvolve ships as a Claude Code plugin. Clone the repository and load the
@@ -87,6 +92,11 @@ The campaign traces show the evolver constructing behavior normally encoded in
 an external loop: starting with inexpensive probes, escalating promising
 candidates, repeating noisy measurements, merging complementary discoveries,
 undoing regressions, and reallocating work as evidence unfolds.
+
+![An ARC-AGI-2 evolution campaign in which the evolver recovers from a regression, probes a data subset, merges candidates, repeats an evaluation, and branches its search.](assets/images/adaptive-campaign.png)
+
+*One ARC-AGI-2 campaign under a frozen meta-evolved skill. The evolver chooses
+when to probe, repeat, merge, branch, recover, and stop as evidence arrives.*
 
 ## How It Works
 
