@@ -9,13 +9,15 @@ much evidence to collect, which candidates to pursue, and when to stop. The
 resulting evolution skill can itself be improved through meta-evolution.
 
 **[Project page and interactive demo](https://freeevolve.github.io/)** |
+**[Video](https://freeevolve.github.io/#video)** |
 **[arXiv](https://arxiv.org/abs/2610.09197)** |
 **[PDF](https://arxiv.org/pdf/2610.09197)** |
 **[Code](https://github.com/amazon-science/FreeEvolve)**
 
-![FreeEvolve replaces a prescribed evolution loop with campaign autonomy, then uses meta-evolution to learn how to exercise that control.](assets/images/freeevolve-overview.png)
+[![Watch the FreeEvolve overview video: FreeEvolve replaces a prescribed evolution loop with campaign autonomy, then uses meta-evolution to learn how to exercise that control.](assets/images/freeevolve-overview.png)](https://freeevolve.github.io/#video)
 
-*FreeEvolve gives campaign control to the evolver. Meta-evolution turns that
+*Watch the [FreeEvolve overview video](https://freeevolve.github.io/#video).
+FreeEvolve gives campaign control to the evolver, and meta-evolution turns that
 autonomy into a learned, reusable evolution skill.*
 
 ## Quickstart
