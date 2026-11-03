@@ -1,0 +1,28 @@
+# The pinned stack a tb2_da run installs into eval/.venv.
+#
+# Every pin is the version in the requirements-lock.txt of the source repo this
+# adapter and its deepagents seed harness were vendored from — the set they were
+# written against, and the set its harness-vs-harness numbers
+# were produced with. Pinned rather than
+# floating because the adapter touches langchain-aws internals (bedrock.py patches
+# ChatBedrockConverse._generate/_stream/_resolve_tool_choice by name) and a minor release
+# that renames one of those turns into a silent per-trial failure.
+#
+# harbor is pinned for the same reason: the adapter implements harbor's BaseAgent
+# contract, and 0.13.2 is the version the source repo ran terminal-bench 2.1 with.
+#
+# Direct imports of the adapter and the harness: harbor, deepagents, langchain_aws,
+# botocore. langchain / langchain-core / langgraph* come in under deepagents and are
+# pinned so the resolver cannot move them. langchain-openai and
+# aws-bedrock-token-generator are deliberately absent: bedrock.py imports them only on
+# its GPT-5/Mantle branch, which a bedrock/global.anthropic.* model id never takes.
+harbor==0.13.2
+deepagents==0.6.8
+langchain==1.3.7
+langchain-core==1.4.8
+langchain-aws==1.5.1
+langgraph==1.2.4
+langgraph-prebuilt==1.1.0
+langgraph-checkpoint==4.1.1
+boto3==1.43.28
+botocore==1.43.28

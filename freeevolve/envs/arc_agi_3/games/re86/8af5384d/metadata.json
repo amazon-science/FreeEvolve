@@ -1,0 +1,20 @@
+{
+  "game_id": "re86-8af5384d",
+  "title": "RE86",
+  "default_fps": 25,
+  "tags": [
+    "keyboard_click"
+  ],
+  "baseline_actions": [
+    26,
+    42,
+    86,
+    108,
+    189,
+    139,
+    424,
+    241
+  ],
+  "class_name": "Re86",
+  "local_dir": "games/re86/8af5384d"
+}
